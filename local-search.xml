@@ -5,6 +5,19 @@
   
   <entry>
     <title>Hello World</title>
+    <link href="/2024/07/13/Linux%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+    <url>/2024/07/13/Linux%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Linux安装配置"><a href="#Linux安装配置" class="headerlink" title="Linux安装配置"></a>Linux安装配置</h1><h2 id="镜像下载地址"><a href="#镜像下载地址" class="headerlink" title="镜像下载地址"></a>镜像下载地址</h2><p><a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/18.04.6/"> 清华大学开源软件镜像站 </a> 18.04.06 后缀为 iso</p><h2 id="finalshell-连接"><a href="#finalshell-连接" class="headerlink" title="finalshell 连接"></a>finalshell 连接</h2><ul><li>windows ping ip地址，若丢包率为0，则Linux没有安装ssh</li></ul><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">sudo apt-<span class="hljs-built_in">get</span> install ssh<br></code></pre></td></tr></table></figure><ul><li>即可解决该问题</li></ul><h2 id="安装VS-code"><a href="#安装VS-code" class="headerlink" title="安装VS code"></a>安装VS code</h2><ul><li>可以用finalshell把官网上的deb包传到linux上即可安装</li></ul><h2 id="安装Vim"><a href="#安装Vim" class="headerlink" title="安装Vim"></a>安装Vim</h2><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">sudo apt-<span class="hljs-built_in">get</span> install neovim<br></code></pre></td></tr></table></figure><ul><li><p>vim四种模式就不在这介绍</p></li><li><p>配置vim</p></li></ul><figure class="highlight leaf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs leaf">call plug<span class="hljs-punctuation">#</span><span class="hljs-keyword">begin</span><span class="hljs-params">(&#x27;~<span class="hljs-operator">/</span>.<span class="hljs-variable">vim</span><span class="hljs-operator">/</span><span class="hljs-variable">plugged</span>&#x27;)</span><br>Plug &#x27;scrooloose/nerdtree&#x27;<br>call plug<span class="hljs-punctuation">#</span><span class="hljs-keyword">end</span><span class="hljs-params">()</span><br>map &lt;silent&gt; &lt;C-e&gt; :NERDTreeToggle&lt;CR&gt;<br></code></pre></td></tr></table></figure><h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><figure class="highlight d"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs d">git config --<span class="hljs-keyword">version</span>         <span class="hljs-comment">//看信息配置</span><br>ssh -T git<span class="hljs-keyword">@github</span>.com        <span class="hljs-comment">//检测链接</span><br></code></pre></td></tr></table></figure><h2 id="安装oh-my-zsh"><a href="#安装oh-my-zsh" class="headerlink" title="安装oh my zsh"></a>安装oh my zsh</h2><ul><li><p>先安装zsh</p></li><li><p>问题curl: (7) Failed to connect to 192.168.177.28 port 7890: 拒绝连接</p></li></ul><blockquote><p>应该是代理问题</p></blockquote><ul><li>Failed to receive SOCKS4 connect request ack.</li></ul><blockquote><p>运行install.sh出现，在前面加个sudo</p></blockquote><h3 id="Linux学习"><a href="#Linux学习" class="headerlink" title="Linux学习"></a>Linux学习</h3><blockquote><p><a href="https://nju-projectn.github.io/ics-pa-gitbook/ics2023/linux.html">Linux入门教程 </a></p></blockquote>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hello World</title>
     <link href="/2024/07/13/hello-world/"/>
     <url>/2024/07/13/hello-world/</url>
     
